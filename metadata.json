@@ -1,0 +1,6 @@
+{
+  "name": "DroDev BI & Reporting Studio",
+  "description": "Plataforma corporativa de reportería y Business Intelligence con dashboards en tiempo real, integración SQL Server y autenticación Active Directory LDAP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>CbsaBiReporting</RootNamespace>
+    <SpaRoot>./</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);node_modules\**</DefaultItemExcludes>
+    <SpaProxyServerUrl>http://localhost:3000</SpaProxyServerUrl>
+    <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Microsoft SQL Server ADO.NET Client with Connection Pooling -->
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    
+    <!-- JWT Authentication & Authorization for Active Directory claims -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+    
+    <!-- LDAP Client for Windows Server 2012 Active Directory Domain Services -->
+    <PackageReference Include="Novell.Directory.Ldap.NETStandard" Version="3.6.0" />
+    
+    <!-- Swagger / OpenAPI for API Documentation -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    
+    <!-- SPA Proxy Integration -->
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Content Remove="node_modules\**" />
+  </ItemGroup>
+
+</Project>
